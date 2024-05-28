@@ -1,0 +1,15 @@
+{ 
+  "welcomeFile": "productapp/webapp/", 
+  "authenticationMethod": "none",
+  "routes": [ 
+    { 
+      "source": "^/productapp/webapp/(.*)$", 
+      "target": "$1",
+      "localDir": "productapp/webapp/" 
+    }, 
+    { 
+      "source": "^/(.*)", 
+      "destination": "srv-api" 
+    } 
+  ] 
+} 
